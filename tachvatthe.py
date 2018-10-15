@@ -22,7 +22,7 @@ mask = cv2.inRange(hsvImg, min_color, max_color)
 # print(mask)
 cv2.imshow('Mat na', mask)
 
-imgRes = cv2.bitwise_and(imgSrc, imgSrc, mask = mask)
+imgRes = cv2.bitwise_and(imgSrc, imgSrc, mask= mask)
 cv2.imshow('Ket qua', imgRes)
 
 # print(mask.shape)
